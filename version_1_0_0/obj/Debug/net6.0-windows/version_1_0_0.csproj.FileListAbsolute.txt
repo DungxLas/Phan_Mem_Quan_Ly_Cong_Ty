@@ -1,0 +1,17 @@
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\bin\Debug\net6.0-windows\version_1_0_0.exe
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\bin\Debug\net6.0-windows\version_1_0_0.deps.json
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\bin\Debug\net6.0-windows\version_1_0_0.runtimeconfig.json
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\bin\Debug\net6.0-windows\version_1_0_0.dll
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\bin\Debug\net6.0-windows\version_1_0_0.pdb
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\obj\Debug\net6.0-windows\version_1_0_0.csproj.AssemblyReference.cache
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\obj\Debug\net6.0-windows\version_1_0_0.FormChinh.resources
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\obj\Debug\net6.0-windows\version_1_0_0.csproj.GenerateResource.cache
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\obj\Debug\net6.0-windows\version_1_0_0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\obj\Debug\net6.0-windows\version_1_0_0.AssemblyInfoInputs.cache
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\obj\Debug\net6.0-windows\version_1_0_0.AssemblyInfo.cs
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\obj\Debug\net6.0-windows\version_1_0_0.csproj.CoreCompileInputs.cache
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\obj\Debug\net6.0-windows\version_1_0_0.dll
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\obj\Debug\net6.0-windows\refint\version_1_0_0.dll
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\obj\Debug\net6.0-windows\version_1_0_0.pdb
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\obj\Debug\net6.0-windows\version_1_0_0.genruntimeconfig.cache
+C:\Users\phamj\Documents\GitHub\Phan_Mem_Quan_Ly_Cong_Ty\version_1_0_0\obj\Debug\net6.0-windows\ref\version_1_0_0.dll
