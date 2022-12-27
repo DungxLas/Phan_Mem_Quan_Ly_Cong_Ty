@@ -23,5 +23,18 @@ namespace version_1_0_0
         {
 
         }
+
+        public bool kiemTraMaTrung(string ma)
+        {
+            int soLuongNhanVien = DanhSach.Count;
+
+            for(int i = 0; i < soLuongNhanVien; i++)
+            {
+                if (DanhSach[i]._MaSo == ma)
+                    return true;
+            }
+
+            return false;
+        }
     }
 }

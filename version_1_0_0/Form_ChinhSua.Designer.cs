@@ -1,14 +1,14 @@
 ﻿namespace version_1_0_0
 {
-    partial class FormChinh
+    partial class Form_ChinhSua
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,8 +23,8 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -48,12 +48,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox_MaSo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button_Them = new System.Windows.Forms.Button();
-            this.button_Sua = new System.Windows.Forms.Button();
-            this.button_Xoa = new System.Windows.Forms.Button();
-            this.button_SapXep = new System.Windows.Forms.Button();
-            this.listView_DanhSachNhanVien = new System.Windows.Forms.ListView();
-            this.label7 = new System.Windows.Forms.Label();
+            this.button_Huy = new System.Windows.Forms.Button();
+            this.button_XacNhanSua = new System.Windows.Forms.Button();
             this.groupBox_ThongTinChung.SuspendLayout();
             this.groupBox_ThongTinRieng.SuspendLayout();
             this.SuspendLayout();
@@ -77,10 +73,10 @@
             this.groupBox_ThongTinChung.Controls.Add(this.label2);
             this.groupBox_ThongTinChung.Controls.Add(this.textBox_MaSo);
             this.groupBox_ThongTinChung.Controls.Add(this.label1);
-            this.groupBox_ThongTinChung.Location = new System.Drawing.Point(29, 28);
+            this.groupBox_ThongTinChung.Location = new System.Drawing.Point(28, 12);
             this.groupBox_ThongTinChung.Name = "groupBox_ThongTinChung";
             this.groupBox_ThongTinChung.Size = new System.Drawing.Size(917, 358);
-            this.groupBox_ThongTinChung.TabIndex = 0;
+            this.groupBox_ThongTinChung.TabIndex = 1;
             this.groupBox_ThongTinChung.TabStop = false;
             this.groupBox_ThongTinChung.Text = "Thông tin chung";
             // 
@@ -122,7 +118,6 @@
             this.radioButton_Manager.TabStop = true;
             this.radioButton_Manager.Text = "Manager";
             this.radioButton_Manager.UseVisualStyleBackColor = true;
-            this.radioButton_Manager.Click += new System.EventHandler(this.radioButton_Manager_Click);
             // 
             // radioButton_Designer
             // 
@@ -134,7 +129,6 @@
             this.radioButton_Designer.TabStop = true;
             this.radioButton_Designer.Text = "Designer";
             this.radioButton_Designer.UseVisualStyleBackColor = true;
-            this.radioButton_Designer.Click += new System.EventHandler(this.radioButton_Designer_Click);
             // 
             // radioButton_Tester
             // 
@@ -146,7 +140,6 @@
             this.radioButton_Tester.TabStop = true;
             this.radioButton_Tester.Text = "Tester";
             this.radioButton_Tester.UseVisualStyleBackColor = true;
-            this.radioButton_Tester.Click += new System.EventHandler(this.radioButton_Tester_Click);
             // 
             // radioButton_Programmer
             // 
@@ -158,7 +151,6 @@
             this.radioButton_Programmer.TabStop = true;
             this.radioButton_Programmer.Text = "Programmer";
             this.radioButton_Programmer.UseVisualStyleBackColor = true;
-            this.radioButton_Programmer.Click += new System.EventHandler(this.radioButton_Programmer_Click);
             // 
             // dateTimePicker_NgaySinh
             // 
@@ -256,90 +248,42 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã số (*)";
             // 
-            // button_Them
+            // button_Huy
             // 
-            this.button_Them.Location = new System.Drawing.Point(29, 405);
-            this.button_Them.Name = "button_Them";
-            this.button_Them.Size = new System.Drawing.Size(163, 70);
-            this.button_Them.TabIndex = 1;
-            this.button_Them.Text = "Thêm";
-            this.button_Them.UseVisualStyleBackColor = true;
-            this.button_Them.Click += new System.EventHandler(this.button_Them_Click);
+            this.button_Huy.Location = new System.Drawing.Point(545, 387);
+            this.button_Huy.Name = "button_Huy";
+            this.button_Huy.Size = new System.Drawing.Size(163, 70);
+            this.button_Huy.TabIndex = 5;
+            this.button_Huy.Text = "Huỷ";
+            this.button_Huy.UseVisualStyleBackColor = true;
             // 
-            // button_Sua
+            // button_XacNhanSua
             // 
-            this.button_Sua.Location = new System.Drawing.Point(291, 405);
-            this.button_Sua.Name = "button_Sua";
-            this.button_Sua.Size = new System.Drawing.Size(163, 70);
-            this.button_Sua.TabIndex = 2;
-            this.button_Sua.Text = "Sửa";
-            this.button_Sua.UseVisualStyleBackColor = true;
+            this.button_XacNhanSua.Location = new System.Drawing.Point(290, 387);
+            this.button_XacNhanSua.Name = "button_XacNhanSua";
+            this.button_XacNhanSua.Size = new System.Drawing.Size(163, 70);
+            this.button_XacNhanSua.TabIndex = 4;
+            this.button_XacNhanSua.Text = "Xác nhận sửa";
+            this.button_XacNhanSua.UseVisualStyleBackColor = true;
             // 
-            // button_Xoa
-            // 
-            this.button_Xoa.Location = new System.Drawing.Point(546, 405);
-            this.button_Xoa.Name = "button_Xoa";
-            this.button_Xoa.Size = new System.Drawing.Size(163, 70);
-            this.button_Xoa.TabIndex = 3;
-            this.button_Xoa.Text = "Xoá";
-            this.button_Xoa.UseVisualStyleBackColor = true;
-            // 
-            // button_SapXep
-            // 
-            this.button_SapXep.Location = new System.Drawing.Point(783, 405);
-            this.button_SapXep.Name = "button_SapXep";
-            this.button_SapXep.Size = new System.Drawing.Size(163, 70);
-            this.button_SapXep.TabIndex = 4;
-            this.button_SapXep.Text = "Sắp xếp";
-            this.button_SapXep.UseVisualStyleBackColor = true;
-            // 
-            // listView_DanhSachNhanVien
-            // 
-            this.listView_DanhSachNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView_DanhSachNhanVien.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.listView_DanhSachNhanVien.FullRowSelect = true;
-            this.listView_DanhSachNhanVien.GridLines = true;
-            this.listView_DanhSachNhanVien.Location = new System.Drawing.Point(29, 520);
-            this.listView_DanhSachNhanVien.Name = "listView_DanhSachNhanVien";
-            this.listView_DanhSachNhanVien.Size = new System.Drawing.Size(917, 283);
-            this.listView_DanhSachNhanVien.TabIndex = 5;
-            this.listView_DanhSachNhanVien.UseCompatibleStateImageBehavior = false;
-            this.listView_DanhSachNhanVien.View = System.Windows.Forms.View.Details;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(29, 496);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(268, 21);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Danh sách nhân viên trong công ty";
-            // 
-            // FormChinh
+            // Form_ChinhSua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(973, 815);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.listView_DanhSachNhanVien);
-            this.Controls.Add(this.button_SapXep);
-            this.Controls.Add(this.button_Xoa);
-            this.Controls.Add(this.button_Sua);
-            this.Controls.Add(this.button_Them);
+            this.ClientSize = new System.Drawing.Size(972, 479);
+            this.Controls.Add(this.button_Huy);
+            this.Controls.Add(this.button_XacNhanSua);
             this.Controls.Add(this.groupBox_ThongTinChung);
             this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FormChinh";
-            this.Text = "Phần mềm quản lý";
-            this.Load += new System.EventHandler(this.FormChinh_Load);
+            this.Name = "Form_ChinhSua";
+            this.Text = "Form_ChinhSua";
+            this.Load += new System.EventHandler(this.Form_ChinhSua_Load);
             this.groupBox_ThongTinChung.ResumeLayout(false);
             this.groupBox_ThongTinChung.PerformLayout();
             this.groupBox_ThongTinRieng.ResumeLayout(false);
             this.groupBox_ThongTinRieng.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -365,11 +309,7 @@
         private Label label2;
         private TextBox textBox_MaSo;
         private Label label1;
-        private Button button_Them;
-        private Button button_Sua;
-        private Button button_Xoa;
-        private Button button_SapXep;
-        private ListView listView_DanhSachNhanVien;
-        private Label label7;
+        private Button button_Huy;
+        private Button button_XacNhanSua;
     }
 }

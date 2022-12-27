@@ -15,6 +15,8 @@ namespace version_1_0_0
         protected double HeSoLuong;
         protected double LuongCoBan;
 
+        public string _MaSo { get => MaSo; set => MaSo = value; }
+
         public NhanVien()
         {
             MaSo = "AAAA";
