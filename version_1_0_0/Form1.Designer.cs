@@ -332,6 +332,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormChinh";
             this.Text = "Phần mềm quản lý";
+            this.Load += new System.EventHandler(this.FormChinh_Load);
             this.groupBox_ThongTinChung.ResumeLayout(false);
             this.groupBox_ThongTinChung.PerformLayout();
             this.groupBox_ThongTinRieng.ResumeLayout(false);
