@@ -31,5 +31,14 @@ namespace version_1_0_0
         {
             return base.TinhLuong() + SoLoi * 100000;
         }
+
+        public override List<string> xuatNhanVien()
+        {
+            List<string> arr = base.xuatNhanVien();
+            arr.Add("Tester");
+            arr.Add(SoLoi.ToString());
+
+            return arr;
+        }
     }
 }

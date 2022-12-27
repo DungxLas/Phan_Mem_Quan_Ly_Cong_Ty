@@ -31,5 +31,14 @@ namespace version_1_0_0
         {
             return base.TinhLuong() + TienOT;
         }
+
+        public override List<string> xuatNhanVien()
+        {
+            List<string> arr = base.xuatNhanVien();
+            arr.Add("Programmer");
+            arr.Add(TienOT.ToString());
+
+            return arr;
+        }
     }
 }

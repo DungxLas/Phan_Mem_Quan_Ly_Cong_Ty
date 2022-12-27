@@ -20,5 +20,14 @@ namespace version_1_0_0
         {
             return base.TinhLuong();
         }
+
+        public override List<string> xuatNhanVien()
+        {
+            List<string> arr = base.xuatNhanVien();
+            arr.Add("Manager");
+            arr.Add("Không có");
+
+            return arr;
+        }
     }
 }

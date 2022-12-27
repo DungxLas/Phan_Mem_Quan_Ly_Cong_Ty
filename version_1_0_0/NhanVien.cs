@@ -8,16 +8,16 @@ namespace version_1_0_0
 {
     internal class NhanVien
     {
-        protected string Ma;
+        protected string MaSo;
         protected string HoTen;
-        protected DateTime NgaySinh;
         protected string DiaChi;
+        protected DateTime NgaySinh;
         protected double HeSoLuong;
         protected double LuongCoBan;
 
         public NhanVien()
         {
-            Ma = "AAAA";
+            MaSo = "AAAA";
             HoTen = "BBBB";
             NgaySinh = DateTime.Now;
             DiaChi = "CCCC";
@@ -25,9 +25,9 @@ namespace version_1_0_0
             LuongCoBan = 1111.0;
         }
 
-        public NhanVien(string ma, string hoTen, DateTime ngaySinh, string diaChi, double heSoLuong, double luongCoBan)
+        public NhanVien(string maso, string hoTen, DateTime ngaySinh, string diaChi, double heSoLuong, double luongCoBan)
         {
-            Ma = ma;
+            MaSo = maso;
             HoTen = hoTen;
             NgaySinh = ngaySinh;
             DiaChi = diaChi;
@@ -37,7 +37,7 @@ namespace version_1_0_0
 
         public NhanVien(NhanVien other)
         {
-            Ma = other.Ma;
+            MaSo = other.MaSo;
             HoTen = other.HoTen;
             NgaySinh = other.NgaySinh;
             DiaChi = other.DiaChi;
@@ -48,6 +48,20 @@ namespace version_1_0_0
         public virtual double TinhLuong()
         {
             return LuongCoBan * HeSoLuong;
+        }
+
+        virtual public List<string> xuatNhanVien()
+        {
+            List<string> arr = new List<string>(); //Tạo 1 mảng để nạp dữ liệu vào mảng đó
+
+            arr.Add(MaSo); //nạp maso vào mảng
+            arr.Add(HoTen); //nạp hoten vào mảng
+            arr.Add(DiaChi); //nạp diachi vào mảng
+            arr.Add(NgaySinh.ToString()); //nạp ngaysinh vào mảng
+            arr.Add(HeSoLuong.ToString()); //nạp hesoluong vào mảng
+            arr.Add((LuongCoBan).ToString()); //nạp luongcoban vào mảng
+
+            return arr;
         }
     }
 }

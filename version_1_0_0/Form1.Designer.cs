@@ -264,6 +264,7 @@
             this.button_Them.TabIndex = 1;
             this.button_Them.Text = "Thêm";
             this.button_Them.UseVisualStyleBackColor = true;
+            this.button_Them.Click += new System.EventHandler(this.button_Them_Click);
             // 
             // button_Sua
             // 
