@@ -108,13 +108,15 @@
             arr.Add(nv.TinhLuong().ToString()); //Nạp tiền lương nhân viên cho mảng
             ListViewItem item = new ListViewItem(arr.ToArray()); //Tạo 1 list item ứng với từng dữ liệu
             listView_DanhSachNhanVien.Items.Add(item); //Nạp list item vào listView
+
+            MessageBox.Show("Thêm thành công nhân viên", "Thông báo", MessageBoxButtons.OK);
         }
 
         private void button_Sua_Click(object sender, EventArgs e)
         {
             if(listView_DanhSachNhanVien.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Bạn chưa chọn loại nhân viên muốn sửa thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Bạn chưa chọn nhân viên muốn sửa thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return;
             }
@@ -164,7 +166,34 @@
 
         private void button_Xoa_Click(object sender, EventArgs e)
         {
+            if (listView_DanhSachNhanVien.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Bạn chưa chọn nhân viên muốn xoá", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+                return;
+            }
+
+            DialogResult dlr = MessageBox.Show("Bạn chắc chắn muốn xoá nhân viên này chứ ???", "Thông báo", MessageBoxButtons.YesNo);
+
+            if (dlr == DialogResult.Yes)
+            {
+                int STT = int.Parse(listView_DanhSachNhanVien.SelectedItems[0].SubItems[0].Text);
+
+                congty._DanhSach.RemoveAt(STT - 1);
+
+                listView_DanhSachNhanVien.Items.RemoveAt((STT - 1));
+                int sohang = listView_DanhSachNhanVien.Items.Count();
+                for(int i = STT - 1; i < sohang; i++)
+                {
+                    listView_DanhSachNhanVien.Items[i].SubItems[0].Text = (i + 1).ToString();
+                }
+
+                MessageBox.Show("Xoá thành công nhân viên", "Thông báo", MessageBoxButtons.OK);
+            }
+            else if (dlr == DialogResult.No)
+            {
+                MessageBox.Show("Sau nhớ nghĩ kĩ rồi hay chọn", "Thông báo", MessageBoxButtons.OK);
+            }
         }
     }
 }
