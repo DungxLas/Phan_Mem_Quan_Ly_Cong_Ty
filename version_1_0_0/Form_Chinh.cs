@@ -8,8 +8,9 @@
         }
 
         // khai báo biến toàn cục
-        CongTy congty = new CongTy();
+        public static CongTy congty = new CongTy();
         NhanVien nv;
+        public static bool check = false;
 
         private void FormChinh_Load(object sender, EventArgs e)
         {
@@ -68,35 +69,28 @@
                 return;
             }
 
+            //Chọn loại nhân viên
             if (radioButton_Programmer.Checked == true)
             {
                 double tienOT = double.Parse(textBox_ThongTinRieng.Text);
 
                 nv = new Programmer(maso, hoten, ngaysinh, diachi, hesoluong, luongcoban, tienOT);
-
-                congty._DanhSach.Add(nv);
             }
             else if (radioButton_Tester.Checked == true)
             {
                 double soloi = double.Parse(textBox_ThongTinRieng.Text);
 
                 nv = new Tester(maso, hoten, ngaysinh, diachi, hesoluong, luongcoban, soloi);
-
-                congty._DanhSach.Add(nv);
             }
             else if (radioButton_Designer.Checked == true)
             {
                 double tienthuong = double.Parse(textBox_ThongTinRieng.Text);
 
                 nv = new Designer(maso, hoten, ngaysinh, diachi, hesoluong, luongcoban, tienthuong);
-
-                congty._DanhSach.Add(nv);
             }
             else if (radioButton_Manager.Checked == true)
             {
                 nv = new Manager(maso, hoten, ngaysinh, diachi, hesoluong, luongcoban);
-
-                congty._DanhSach.Add(nv);
             }
             else
             {
@@ -104,6 +98,8 @@
 
                 return;
             }
+
+            congty._DanhSach.Add(nv); //Thêm nhân viên vào danh sách công ty 
 
             List<string> arr = new List<string>(); //Tạo 1 mảng để nạp dữ liệu vào mảng đó
 
@@ -116,6 +112,14 @@
 
         private void button_Sua_Click(object sender, EventArgs e)
         {
+            if(listView_DanhSachNhanVien.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Bạn chưa chọn loại nhân viên muốn sửa thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                return;
+            }
+
+            int STT = int.Parse(listView_DanhSachNhanVien.SelectedItems[0].SubItems[0].Text);
             string maso = listView_DanhSachNhanVien.SelectedItems[0].SubItems[1].Text;
             string hoten = listView_DanhSachNhanVien.SelectedItems[0].SubItems[2].Text;
             string diachi = listView_DanhSachNhanVien.SelectedItems[0].SubItems[3].Text;
@@ -128,6 +132,7 @@
             //Bước 1: Cập nhập dữ liệu từ form Chính sang form Chỉnh sửa
             Form_ChinhSua frm = new Form_ChinhSua();
 
+            frm.STT = STT;
             frm.maso = maso;
             frm.hoten = hoten;
             frm.ngaysinh = ngaysinh;
@@ -139,18 +144,27 @@
 
             frm.ShowDialog();
 
-            //Bước 2: Nhận lại dữ liệu form cập nhập lại form quản lý ngân hàng...... //Bước 3: Cập nhập dữ liệu vào list nganhang  
-            //if (check == true)
-            //{
-            //    Nhận lại dữ liệu form cập nhập lại form quản lý ngân hàng
-            //    listViewDanhSachSo.SelectedItems[0].SubItems[1].Text = HoTenKhachHang;
-            //    listViewDanhSachSo.SelectedItems[0].SubItems[2].Text = cmnd;
-            //    listViewDanhSachSo.SelectedItems[0].SubItems[3].Text = SoTienGui;
-            //    listViewDanhSachSo.SelectedItems[0].SubItems[4].Text = NgayLapSo;
-            //    listViewDanhSachSo.SelectedItems[0].SubItems[5].Text = KyHanLaiSuat;
+            //Bước 2: Nhận lại dữ liệu form Chỉnh sửa lại form Chính và cập nhập dữ liệu vào listView  
+            if (check == true)
+            {
+                check = false;
 
-            //    Cập nhập dữ liệu vào list nganhang bên form cập nhập
-            //}
+                nv = frm.nv;
+
+                List<string> arr = new List<string>(); //Tạo 1 mảng để nạp dữ liệu vào mảng đó
+
+                arr = nv.xuatNhanVien(); //nạp dữ liệu vào mảng
+                arr.Insert(0, STT.ToString()); //Nạp STT cho mảng
+                arr.Add(nv.TinhLuong().ToString()); //Nạp tiền lương nhân viên cho mảng
+                ListViewItem item = new ListViewItem(arr.ToArray()); //Tạo 1 list item ứng với từng dữ liệu
+                listView_DanhSachNhanVien.Items.RemoveAt(STT - 1); //Xoá hàng nhân viên cũ
+                listView_DanhSachNhanVien.Items.Insert(STT - 1, item); //Thay bằng hàng nhân viên mới
+            }
+        }
+
+        private void button_Xoa_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

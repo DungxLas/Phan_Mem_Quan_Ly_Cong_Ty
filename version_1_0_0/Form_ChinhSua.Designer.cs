@@ -256,6 +256,7 @@
             this.button_Huy.TabIndex = 5;
             this.button_Huy.Text = "Huỷ";
             this.button_Huy.UseVisualStyleBackColor = true;
+            this.button_Huy.Click += new System.EventHandler(this.button_Huy_Click);
             // 
             // button_XacNhanSua
             // 
@@ -265,6 +266,7 @@
             this.button_XacNhanSua.TabIndex = 4;
             this.button_XacNhanSua.Text = "Xác nhận sửa";
             this.button_XacNhanSua.UseVisualStyleBackColor = true;
+            this.button_XacNhanSua.Click += new System.EventHandler(this.button_XacNhanSua_Click);
             // 
             // Form_ChinhSua
             // 

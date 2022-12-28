@@ -285,6 +285,7 @@
             this.button_Xoa.TabIndex = 3;
             this.button_Xoa.Text = "Xoá";
             this.button_Xoa.UseVisualStyleBackColor = true;
+            this.button_Xoa.Click += new System.EventHandler(this.button_Xoa_Click);
             // 
             // button_SapXep
             // 

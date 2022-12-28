@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace version_1_0_0
 {
-    internal class NhanVien
+    public class NhanVien
     {
         protected string MaSo;
         protected string HoTen;

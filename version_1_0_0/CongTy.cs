@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace version_1_0_0
 {
-    internal class CongTy
+    public class CongTy
     {
         private List<NhanVien> DanhSach = new List<NhanVien>();
 
@@ -24,7 +24,7 @@ namespace version_1_0_0
 
         }
 
-        public bool kiemTraMaTrung(string ma)
+        public bool kiemTraMaTrung(string ma) //Kiểm tra nhân viên bị trùng mã
         {
             int soLuongNhanVien = DanhSach.Count;
 
@@ -35,6 +35,12 @@ namespace version_1_0_0
             }
 
             return false;
+        }
+
+        public void rePlace(int indexB, NhanVien A) //Thay thế nhân viên A vào vị trí nhân viên B trong danh sách
+        {
+            DanhSach.RemoveAt(indexB);
+            DanhSach.Insert(indexB, A);
         }
     }
 }
