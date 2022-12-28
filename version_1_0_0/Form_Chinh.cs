@@ -182,7 +182,7 @@
                 congty._DanhSach.RemoveAt(STT - 1);
 
                 listView_DanhSachNhanVien.Items.RemoveAt((STT - 1));
-                int sohang = listView_DanhSachNhanVien.Items.Count();
+                int sohang = listView_DanhSachNhanVien.Items.Count;
                 for(int i = STT - 1; i < sohang; i++)
                 {
                     listView_DanhSachNhanVien.Items[i].SubItems[0].Text = (i + 1).ToString();
