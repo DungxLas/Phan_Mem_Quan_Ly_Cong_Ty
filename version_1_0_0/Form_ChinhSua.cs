@@ -31,7 +31,7 @@ namespace version_1_0_0
 
         private void Form_ChinhSua_Load(object sender, EventArgs e)
         {
-            textBox_MaSo.Text = maso;
+            textBox_MaSo.Text = maso; textBox_MaSo.Enabled = false;
             textBox_HoTen.Text = hoten;
             dateTimePicker_NgaySinh.Value = ngaysinh;
             textBox_DiaChi.Text = diachi;
