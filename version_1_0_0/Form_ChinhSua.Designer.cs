@@ -272,7 +272,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 479);
+            this.ClientSize = new System.Drawing.Size(974, 479);
             this.Controls.Add(this.button_Huy);
             this.Controls.Add(this.button_XacNhanSua);
             this.Controls.Add(this.groupBox_ThongTinChung);

@@ -306,7 +306,7 @@
             this.listView_DanhSachNhanVien.GridLines = true;
             this.listView_DanhSachNhanVien.Location = new System.Drawing.Point(29, 520);
             this.listView_DanhSachNhanVien.Name = "listView_DanhSachNhanVien";
-            this.listView_DanhSachNhanVien.Size = new System.Drawing.Size(917, 283);
+            this.listView_DanhSachNhanVien.Size = new System.Drawing.Size(1118, 217);
             this.listView_DanhSachNhanVien.TabIndex = 5;
             this.listView_DanhSachNhanVien.UseCompatibleStateImageBehavior = false;
             this.listView_DanhSachNhanVien.View = System.Windows.Forms.View.Details;
@@ -324,7 +324,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(973, 815);
+            this.ClientSize = new System.Drawing.Size(973, 749);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.listView_DanhSachNhanVien);
             this.Controls.Add(this.button_SapXep);
